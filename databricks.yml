@@ -1,0 +1,25 @@
+# This is a Databricks asset bundle definition for marvelous-databricks-course-LuisCBaez.
+# The Databricks extension requires databricks.yml configuration file.
+# See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
+
+bundle:
+  name: marvelous-databricks-course-LuisCBaez
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://dbc-f122dc18-1b68.cloud.databricks.com
+      profile: DEFAULT
+      root_path: /Workspace/Users/${workspace.current_user.userName}/.bundle/${bundle.target}/${bundle.name}
+    cluster_id: 0911-131432-9ef6b08w
+
+
+
+
+  ## Optionally, there could be 'staging' or 'prod' targets here.
+  #
+  # prod:
+  #   workspace:
+  #     host: https://dbc-f122dc18-1b68.cloud.databricks.com

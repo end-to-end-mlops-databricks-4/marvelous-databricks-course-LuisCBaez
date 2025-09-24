@@ -1,0 +1,24 @@
+# environments
+dev:
+  catalog_name: mlops_dev
+  schema_name: lcbaezlo
+
+# volume location in Unity Catalog
+volume:
+  name: m5
+  subdir: raw
+
+# raw files (inside the volume subdir)
+raw_files:
+  calendar: calendar.csv
+  sales: sales.csv
+  prices: sell_prices.csv
+
+# output delta tables (Unity Catalog)
+processed:
+  prepared_sales: m5_prepared
+  train: m5_train
+  test: m5_test
+
+# holdout split
+holdout_months: 4
